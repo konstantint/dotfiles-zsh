@@ -13,9 +13,11 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
-        git
+        colored-man-pages
         fast-syntax-highlighting
         fzf
+        git
+        z
         zsh-autosuggestions
 )
 
