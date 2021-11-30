@@ -7,6 +7,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
   # os_icon               # os identifier
   root_indicator
   ssh
+  context                 # user@hostname
   dir                     # current directory
   dir_writable
   vcs                     # git status
