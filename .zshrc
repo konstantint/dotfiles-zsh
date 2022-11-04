@@ -14,7 +14,9 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
         colored-man-pages
-        fast-syntax-highlighting
+        # This is cute, but it makes pasting to the terminal notably slower and
+        # somewhy hangs the terminal when I type ssh user@ on some machines.
+        #fast-syntax-highlighting
         fzf
         git
         z
