@@ -1,7 +1,7 @@
 # Opens a fzf selector to pick from filenames present in the current window
 
 __path_inserter() {
-    tmux capture-pane -pJ -S 0 | grep -o '/[^" '"'"']*' | fzf
+    tmux capture-pane -pJ -S 0 | grep -o '/[^" '"'"']*' | awk '!x[$0]++' | fzf
 }
 
 fzf-path-inserter-widget() {
